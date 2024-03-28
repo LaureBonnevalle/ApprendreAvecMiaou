@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="Formulaire de Contact Apprendre avec Miaou" />
+    <title>Formulaire de contact</title>
+    <link rel="stylesheet" href="formulaire.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+</head>
+<body class="body-form">
+    <header class="header-form">
+        <h1>Contactez-nous</h1>
+        
+    </header>
+    <main class="container-form">
+        <form method="post">
+            <fieldset>
+                <legend>Tes coordonnées</legend>
+                <div class="field-form">
+                    <label for="firstNameFieldId">Ton Prénom</label>
+                    <input type="text" name="firstName" id="firstNameFieldId" />
+                </div>
+                <div class="field-form">
+                    <label for="lastNameFieldId">Ton Nom</label>
+                    <input type="text" name="lastName" id="lastNameFieldId" />
+                </div>
+                <div class="field-form">
+                    <label for="emailFieldId">Ton Email</label>
+                    <input type="email" name="email" id="emailFieldId" />
+                </div>
+                <div class="field-form">
+                    <label for="dateOfBirthFieldId">Ta Date de Naissance</label>
+                    <input type="date" name="dateOfBirth" id="dateOfBirthFieldId" />
+                </div>
+               <!-- <div class="field">
+                    <label for="isTallFieldId">Est grand</label>
+                    <input type="checkbox" name="isTall" id="isTallFieldId" />
+                </div>-->
+            </fieldset>
+            <fieldset>
+                <legend>Ta demande</legend>
+                <div class="field-form">
+                    <select name="object">
+                        <option value="0">Choisir l'objet de ma demande...</option>
+                        <option value ="u">Question par rapport aux jeux</option>
+                        <option value="f">Question par rapport au site</option>
+                        <option value="q">Question générale</option>
+                        <option value="g">Déclarer un bug génant</option>
+                        <option value="b">Déclarer un bug bloquant</option>
+                        <option value="k">Autre demande</option>
+                    </select>
+                </div>
+                <div class="field-form">
+                    <textarea></textarea>
+                </div>
+            </fieldset>
+            <div class="toolbar-form">
+                <button class="submit-button-form">Valider le formulaire</button>
+            </div>
+        </form>
+    </main>
+    <footer class="footer">
+    </footer>
+</body>
+</html>
+

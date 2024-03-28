@@ -1,0 +1,191 @@
+/****************Variables***********************************/
+
+
+:root {
+    --bleu:RGB(147, 242, 241);
+    --rouge:RGB(255, 17, 0);
+    --vert: RGB(140, 234, 121);
+    --jaune: RGB(255, 239, 49);
+    --violet:RGB(218, 153, 250);
+    --orange:RGB(255, 118, 57);
+}
+
+
+
+
+
+
+
+/****************Général******************************************/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+
+}
+
+
+
+
+.body-memo {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: var(--bleu);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Jua';
+}
+
+.header-memo{
+    font-size: 6vmin;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Jua;
+    color:#FFF;
+    text-shadow: 1vmin 1vmin 3vmin #0004;
+    text-align: center;
+}
+
+.game-container-memo {
+    width: 90vmin;
+    /* height: 60vmin; */
+    background: #f0f0f0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    box-shadow: 0 0 2vmin 1vmin #5552;
+    border-radius: 2vmin;
+    padding: 2vmin;
+    margin: auto;
+}
+
+.game-container-memo .card-memo {
+    width: 17vmin;
+    height: 17vmin;
+    background: #f0f0f0;
+    margin: 1vmin auto;
+    position: relative;
+    box-shadow: 0 0 1vmin #0002;
+    border-radius: 19px;
+    transition: transform 0.5s ease;
+    transform-style: preserve-3d;
+    perspective: 100vmin;
+}
+
+.game-container-memo .card-memo .front,
+.game-container-memo .card-memo .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--violet);
+    border-radius: 1vmin;
+}
+
+.game-container-memo .card-memo .back {
+    background: #f0f0f0;
+    transform: rotateY(180deg) translateZ(0.2vmin);
+    box-shadow: inset 0 0 1vmin #0002;
+}
+
+
+.game-container-memo .card-memo .back img {
+    height: 80%;
+    width: 80%;
+    margin: 10%;
+}
+
+.game-container-memo .card-memo.show {
+    transform: rotateY(180deg);
+}
+
+.bar-memo {
+    width: 90vmin;
+    height: 10vmin;
+    background: #f0f0f0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2em;
+    margin: 2em;
+    box-shadow: 0 0 2vmin #0002;
+    border-radius: 2vmin;
+}
+
+.bar-memo > div {
+    height: 90%;
+    width: 30vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+}
+
+.bar-memo p,
+.bar-memo span {
+    margin: 0;
+    color: #37474f;
+    font-family: 'Jua';
+    font-size: 0.5em;
+}
+
+.bar-memo .start-memo button {
+    width: 70%;
+    height: 80%;
+    background: var(--bleu);
+    color: #fff;
+    font-size: 2em;
+    font-family: 'Jua';
+    border: none;
+    outline: none;
+    border-radius: 2vmin;
+    box-shadow: 0 0 1vmin #0003;
+}
+
+.bar-memo .start-memo button:hover {
+    width: 70%;
+    height: 80%;
+    background: darkblue;
+    color: #fff;
+    font-size: 2em;
+    font-family: 'Jua';
+    border: none;
+    outline: none;
+    border-radius: 2vmin;
+    box-shadow: 0 0 1vmin #0003;
+}
+
+@media only screen and (max-width : 1200px) {
+    .game-container-memo {
+        width: 70vw;
+        grid-template-columns: repeat(3, 1fr);
+        padding-bottom:2em;
+    }
+
+    .game-container-memo .card-memo {
+        width: 20vmin;
+        height: 20vmin;
+    }
+
+    .bar-memo {
+        height: 15vmin;
+    }
+
+    .bar-memo p,
+    .bar-memo span,
+    .bar-memo .start-memo button {
+        font-size: 4vmin;
+    }
+}
