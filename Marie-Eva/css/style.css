@@ -126,12 +126,20 @@ h3 {
 }
 
 /**************NUAGE***************/
+#contentCloud {
+    z-index: 1;
+}
+.cards {
+    z-index: 2;
+}
+
+
 #cloud1 {
     z-index: 1;
     position: absolute;
     left:0px;
     top:1.5em;
-    font-size: 2em;
+    font-size: 6em;
     color: #fff;
     animation: moveCloud 60s linear infinite;
     -webkit-animation: moveCloud 60s linear infinite;
@@ -142,7 +150,7 @@ h3 {
     position: absolute;
     left:-20px;
     top:2em;
-    font-size: 1em;
+    font-size: 5em;
     font-weight: 900;
     color: #666;
     animation-delay:7s;
