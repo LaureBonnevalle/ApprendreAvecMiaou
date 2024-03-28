@@ -36,6 +36,10 @@ body {
     font-size: 1.6rem;
 }
 /****************Header************************/
+.container{
+  max-width: 1200px;
+  margin: auto;
+}
 header{
     background-image: url("../img/image-chat-header.jpg");
     background-size: 100%  300%;
