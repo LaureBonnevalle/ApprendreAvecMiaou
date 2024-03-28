@@ -8,6 +8,8 @@
     --jaune: RGB(255, 239, 49);
     --violet:RGB(218, 153, 250);
     --orange:RGB(255, 118, 57);
+    --indigo: RGB(74, 90, 212);
+    --rose:RGB(252, 197, 237);
     
 
     
@@ -87,7 +89,9 @@ h3 {
     background-color: var(--vert);
 }
 
-.chiffre,
+.chiffre {
+    background-color: var(--indigo);
+}
 .mystere {
     background-color: var(--orange);
 }
