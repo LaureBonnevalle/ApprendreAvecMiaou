@@ -1,0 +1,128 @@
+/****************Variables***********************************/
+
+
+:root {
+    --bleu:RGB(147, 242, 241);
+    --rouge:RGB(255, 17, 0);
+    --vert: RGB(140, 234, 121);
+    --jaune: RGB(255, 239, 49);
+    --violet:RGB(218, 153, 250);
+    --orange:RGB(255, 118, 57);
+    
+
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+/****************Général******************************************/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+/****************Header************************/
+header{
+    background-image: url("../img/image-chat-header.jpg");
+    background-size: 100%  300%;
+    /* background-repeat: no-repeat; */
+    object-fit: cover;
+    width: 100%;
+    background-position: 20% 40%;
+}
+.div-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header li{
+    list-style: none;
+    padding: 1em 1.5em;
+    margin-bottom: 1.5em;
+    margin: 2em;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.chat{
+    width: 15em;
+}
+.search{
+    text-align: end;
+    margin-right: 2em;
+    height: 3em;
+    /* border: 5px solid red; */
+}
+img{
+    width: 100%;
+    height: auto;
+    /* object-fit: cover; */
+}
+.connection {
+    background-color: var(--orange);
+}
+.Inscription {
+    background-color: var(--jaune);
+}
+.navbar {
+    display: flex;
+    justify-content: space-around;
+}
+
+input{
+    max-height: 200px;
+    width: 20%;
+    padding: 0.5em 1.5em;
+    /* border: 5px solid salmon; */
+    border-radius: 1em;
+
+}
+
+
+/****************Main*************************/
+h1{
+    font-family: jua;
+}
+.button-nav{
+    padding: 1em 2.5em;
+    margin-top: 0.5em;
+    border-radius: 10em;
+}
+
+.accueil {
+    background-color: var(--violet);
+}
+.atelier {
+    background-color: var(--bleu);
+}
+.coloriages {
+    background-color: var(--vert);
+}
+.contact {
+    background-color: rgba(255,0,0,0.7);
+}
+
+
+
+
+
+
+
+
+/***************Footer***********************/

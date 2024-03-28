@@ -36,16 +36,90 @@ body {
     font-size: 1.6rem;
 }
 /****************Header************************/
+.container{
+  max-width: 1200px;
+  margin: auto;
+}
+header{
+    background-image: url("../img/image-chat-header.jpg");
+    background-size: 100%  300%;
+    /* background-repeat: no-repeat; */
+    object-fit: cover;
+    width: 100%;
+    background-position: 20% 40%;
+}
+.div-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header li{
+    list-style: none;
+    padding: 1em 1.5em;
+    margin-bottom: 1.5em;
+    margin: 2em;
+}
 
+a{
+    text-decoration: none;
+    color: black;
+}
+.chat{
+    width: 15em;
+}
+.search{
+    text-align: end;
+    margin-right: 2em;
+    height: 3em;
+    /* border: 5px solid red; */
+}
+img{
+    width: 100%;
+    height: auto;
+    /* object-fit: cover; */
+}
+.connection {
+    background-color: var(--orange);
+}
+.Inscription {
+    background-color: var(--jaune);
+}
+.navbar {
+    display: flex;
+    justify-content: space-around;
+}
 
+input{
+    max-height: 200px;
+    width: 20%;
+    padding: 0.5em 1.5em;
+    /* border: 5px solid salmon; */
+    border-radius: 1em;
 
-
-
-
-
-
+}
 
 /****************Main*************************/
+h1{
+    font-family: jua;
+}
+.button-nav{
+    padding: 1em 2.5em;
+    margin-top: 0.5em;
+    border-radius: 10em;
+}
+
+.accueil {
+    background-color: var(--violet);
+}
+.atelier {
+    background-color: var(--bleu);
+}
+.coloriages {
+    background-color: var(--vert);
+}
+.contact {
+    background-color: rgba(255,0,0,0.7);
+}
 
 
 
@@ -55,4 +129,153 @@ body {
 
 
 
-/***************Footer***********************/
+/***********footer***************/
+
+body {
+    min-height: 100em;
+  }
+  
+  .frog {
+    width: 100%;
+    position: relative;
+    bottom: -300px;
+    min-height: 10em;
+    background-color: var(--vert);
+    
+  
+    
+  }
+  
+  .paupiere {
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    position: absolute;
+    background-color: var(--vert);
+  }
+  .droite {
+    top: -5em;
+    right: 10em;
+  }
+  
+  .gauche {
+    top: -5em;
+    left: 10em;
+  }
+  
+  .yeux {
+    background-color: white;
+    width: 8em;
+    height: 8em;
+    position:absolute;
+    border-radius: 50%;
+    top: 15px;
+    left: 15px;
+  }
+  
+  .pupille {
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    position: absolute;
+    top: 23px;
+    left: 23px;
+    background-color: black;
+  }
+  
+  .mouth {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    width: 100px;
+      height: 50px; /* as the half of the width */
+      
+      border-bottom-left-radius: 110px;  /* 100px of height + 10px of border */
+      border-bottom-right-radius: 110px; /* 100px of height + 10px of border */
+      border: 5px solid black;
+      border-top: 0;
+    
+  }
+  .rainbow-menu {
+    position: absolute;
+    top: -200%;
+    left: 0;
+    width: 100%;
+    height: 20em;
+    z-index: -1;
+    list-style: none;
+    
+  }
+  .bande {
+    
+  }
+  .color {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .bande {
+    flex-basis: 1em;
+    flex-grow: 1;
+  }
+  
+  .bande:nth-child(1){
+    background-color: var(--rouge);
+  }
+  .bande:nth-child(2){
+    background-color: var(--orange);
+  }
+  .bande:nth-child(3){
+    background-color: var(--jaune);
+  }
+  .bande:nth-child(4){
+    background-color: var(--vert);
+  }
+  .bande:nth-child(5){
+    background-color: var(--bleu);
+  }
+  .bande:nth-child(6){
+    background-color: var(--violet);
+  }
+  
+  
+  .footer-button {
+    background-color: white;
+    position: absolute;
+    top: 40%;
+    padding: 1em 2em 1em 2em;
+    font-size: 25px;
+    border-radius: 15px;
+    border: none;
+  }
+  
+  .news {
+    left: 15%;
+  }
+  
+  .note {
+    right: 15%;
+  }
+  
+  
+  @keyframes rainbow-translate{
+      0% {
+          transform: translateY(0%);
+      }
+      100% {
+          transform: translateY(-100%);
+          
+          
+      }
+      
+  }
+  
+  
+  
+  /*
+  .rainbow-menu:hover {
+    animation-play-state: paused;
+  }
+  */
+  
