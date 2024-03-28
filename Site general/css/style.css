@@ -39,6 +39,7 @@ body {
 .container{
   max-width: 1200px;
   margin: auto;
+  background-color: var(--bleu);
 }
 header{
     background-image: url("../img/image-chat-header.jpg");
@@ -119,6 +120,222 @@ h1{
 }
 .contact {
     background-color: rgba(255,0,0,0.7);
+}
+
+/********CARDS******/
+
+/*.container {
+    background-color: var(--bleu);
+}*/
+.container .jeu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2,
+h3 {
+    font-family: jua;
+    text-align: center;
+}
+
+h3 {
+    margin: 0;
+}
+
+.img-alpha {
+    
+    width: 200px;
+    border-radius: 1rem;
+
+}
+.card {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 235px; 
+        height: 350px;
+        border-radius: 1rem;
+        margin: 1rem;
+
+}
+.alphabet,
+.puzzle {
+    background-color: var(--vert);
+}
+
+.chiffre,
+.mystere {
+    background-color: var(--orange);
+}
+
+.memo {
+    background-color: var(--jaune);
+}
+
+.aventure {
+    background-color: var(--rouge);
+}
+
+.bloc-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+    /*display: inline-block;*/
+}
+
+.button-jeu {
+    text-decoration: none;
+    color: black;
+    width: 70%;
+    font-family: jua;
+    background-color: var(--violet);
+    padding: 1em 2em;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+/**************NUAGE***************/
+#cloud1 {
+    z-index: 1;
+    position: absolute;
+    left:0px;
+    top:1.5em;
+    font-size: 2em;
+    color: #fff;
+    animation: moveCloud 60s linear infinite;
+    -webkit-animation: moveCloud 60s linear infinite;
+    -moz-animation: moveCloud 60s linear infinite;
+}
+#cloud2 {
+    z-index: 2;
+    position: absolute;
+    left:-20px;
+    top:2em;
+    font-size: 1em;
+    font-weight: 900;
+    color: #666;
+    animation-delay:7s;
+    -webkit-animation-delay:7s;
+    -moz-animation-delay: 7s;
+    animation: moveCloud 50s ease-in-out infinite;
+    -webkit-animation: moveCloud 50s ease-in-out infinite;
+    -moz-animation: moveCloud 50s ease-in-out infinite;
+}
+#cloud3 {
+    z-index: 1;
+    position: absolute;
+    left:-50px;
+    bottom:.5em;
+    font-size: 2.5em;
+    color: #a8e4ec; 
+    animation: moveCloud 55s ease-out infinite;
+    -webkit-animation: moveCloud 55s ease-out infinite;
+    -moz-animation: moveCloud 55s ease-out infinite; 
+}
+#cloud4 {
+    z-index: 2;
+    position: absolute;
+    left:-10px;
+    top:3em;
+    font-size: 2em;
+    font-weight: 900;
+    color: #999;
+    animation-delay:1s;
+    -webkit-animation-delay:1s;
+    -moz-animation-delay: 1s;
+    animation: moveCloud 50s ease-in-out infinite;
+    -webkit-animation: moveCloud 50s ease-in-out infinite;
+    -moz-animation: moveCloud 50s ease-in-out infinite;
+}
+#cloud5 {
+    z-index: 2;
+    position: absolute;
+    left:-60px;
+    top:2.8em;
+    font-size: 2.5em;
+    font-weight: 900;
+    color: #bababa;
+    color: #bababa;
+    animation: moveCloud 70s ease-out infinite;
+    -webkit-animation: moveCloud 70s ease-out infinite;
+    -moz-animation: moveCloud 70s ease-out infinite;
+}
+#cloud6 {
+    z-index: 2;
+    position: absolute;
+    left:-40px;
+    top:0.5em;
+    font-size: 1.8em;
+    font-weight: 900;
+    color: #cacaca;
+    animation-delay:4s;
+    -webkit-animation-delay:4s;
+    -moz-animation-delay: 4s;
+    animation: moveCloud 55s ease-in infinite;
+    -webkit-animation: moveCloud 55s ease-in infinite;
+    -moz-animation: moveCloud 55s ease-in infinite;
+}
+
+@keyframes moveCloud {
+    0% {
+        transform: translate(1950px);
+    }
+    100% {
+        transform: translate(-50px);
+    }
+}
+@-webkit-keyframes moveCloud {
+    0% {
+        transform: translate(1950px);
+    }
+    100% {
+        transform: translate(-50px);
+    }
+}
+@-moz-keyframes moveCloud {
+    0% {
+        transform: translate(1950px);
+    }
+    100% {
+        transform: translate(-50px);
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        width: 50%;
+        
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        width: 50%;
+        
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    }
 }
 
 
