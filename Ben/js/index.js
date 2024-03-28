@@ -1,30 +1,66 @@
-/*********animatiton grenouille *********/
+/*********modale note*********/
 
-/*
+
 
 document.addEventListener('DOMContentLoaded', function() {
-    let rainbow = document.querySelector('.rainbow-menu');
-    let frog = document.querySelector('.frog');
-    console.log(frog);
-    console.log(rainbow);
+    let buttonNote = document.querySelector(".note-button");
 
-const translate = [
-  
-  { transform: "translateY(-100%)", "endDelay: 30s" },
-  
-];
-    frog.addEventListener('mouseover', function() {
+    let modaleNote = document.querySelector(".note");
+    console.log(modaleNote)
 
-            rainbow.animate(translate, 1000, "forwards");
 
+    buttonNote.addEventListener('click', function() {
+
+
+
+        modaleNote.classList.toggle('opacity');
+
+        
+            
+
+            let rainbowGrid = document.querySelector('.grille-note');
+            let rainbowBox = document.querySelectorAll('.box-rainbow');
+
+            let merci = document.querySelector('.note-title');
+            console.log(rainbowBox);
+            rainbowBox[0].addEventListener('click', function() {
+
+                rainbowBox[0].style.opacity = "1";
+                rainbowBox[2].style.opacity = "1";
+                merci.innerHTML = "Merci d'avoir vote";
+                rainbowBox[2].style.opacity = "0";
+
+                rainbowBox[1].style.opacity = "0";
 
             });
+            rainbowBox[1].addEventListener('click', function() {
+
+                rainbowBox[1].style.opacity = "1";
+                merci.innerHTML = "Merci d'avoir vote";
+                rainbowBox[0].style.opacity = "0";
+
+                rainbowBox[2].style.opacity = "0";
+
+            });
+            rainbowBox[2].addEventListener('click', function() {
+
+                rainbowBox[2].style.opacity = "1";
+                merci.innerHTML = "Merci d'avoir vote";
+                rainbowBox[0].style.opacity = "0";
+
+                rainbowBox[1].style.opacity = "0";
+
+            });
+        
+
+
+
 
 
     });
 
-*/
 
 
 
 
+});

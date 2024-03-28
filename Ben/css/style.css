@@ -1,18 +1,17 @@
 /****************Variables***********************************/
 
-
 :root {
-    --bleu:RGB(147, 242, 241);
-    --rouge:RGB(255, 17, 0);
-    --vert: RGB(140, 234, 121);
-    --jaune: RGB(255, 239, 49);
-    --violet:RGB(218, 153, 250);
-    --orange:RGB(255, 118, 57);
-    
+  --bleu: RGB(147, 242, 241);
+  --rouge: RGB(255, 17, 0);
+  --vert: RGB(140, 234, 121);
+  --jaune: RGB(255, 239, 49);
+  --violet: RGB(218, 153, 250);
+  --orange: RGB(255, 118, 57);
 
-    
-    
-    
+
+
+
+
 }
 
 
@@ -25,41 +24,25 @@
 /****************Général******************************************/
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    font-size: 1.6rem;
-    margin: 0;
-    
-    font-family: "jua";
+  font-size: 1.6rem;
+  margin: 0;
+
+  font-family: "jua";
 }
+
 /****************Header************************/
-
-
-
-
-
-
-
-
 
 /****************Main*************************/
 
-
-
-
-
-
-
-
-
 /***************Footer***********************/
-
 
 /***********footer***************/
 
@@ -69,13 +52,13 @@ body {
 
 .frog {
   width: 100%;
-  position: relative;
-  bottom: -300px;
+  position: fixed;
+  bottom: 0;
   min-height: 10em;
   background-color: var(--vert);
-  
 
-  
+
+
 }
 
 .paupiere {
@@ -85,6 +68,7 @@ body {
   position: absolute;
   background-color: var(--vert);
 }
+
 .droite {
   top: -5em;
   right: 10em;
@@ -99,7 +83,7 @@ body {
   background-color: white;
   width: 8em;
   height: 8em;
-  position:absolute;
+  position: absolute;
   border-radius: 50%;
   top: 15px;
   left: 15px;
@@ -120,14 +104,17 @@ body {
   top: 50%;
   left: 45%;
   width: 100px;
-    height: 50px; /* as the half of the width */
-    
-    border-bottom-left-radius: 110px;  /* 100px of height + 10px of border */
-    border-bottom-right-radius: 110px; /* 100px of height + 10px of border */
-    border: 5px solid black;
-    border-top: 0;
-  
+  height: 50px;
+  /* as the half of the width */
+  border-bottom-left-radius: 110px;
+  /* 100px of height + 10px of border */
+  border-bottom-right-radius: 110px;
+  /* 100px of height + 10px of border */
+  border: 5px solid black;
+  border-top: 0;
+
 }
+
 .rainbow-menu {
   position: absolute;
   top: -200%;
@@ -136,11 +123,11 @@ body {
   height: 20em;
   z-index: -1;
   list-style: none;
-  
+
 }
-.bande {
-  
-}
+
+.bande {}
+
 .color {
   height: 100%;
   display: flex;
@@ -152,22 +139,27 @@ body {
   flex-grow: 1;
 }
 
-.bande:nth-child(1){
+.bande:nth-child(1) {
   background-color: var(--rouge);
 }
-.bande:nth-child(2){
+
+.bande:nth-child(2) {
   background-color: var(--orange);
 }
-.bande:nth-child(3){
+
+.bande:nth-child(3) {
   background-color: var(--jaune);
 }
-.bande:nth-child(4){
+
+.bande:nth-child(4) {
   background-color: var(--vert);
 }
-.bande:nth-child(5){
+
+.bande:nth-child(5) {
   background-color: var(--bleu);
 }
-.bande:nth-child(6){
+
+.bande:nth-child(6) {
   background-color: var(--violet);
 }
 
@@ -182,25 +174,34 @@ body {
   border: none;
 }
 
+.footer-button:hover {
+  cursor: pointer;
+}
+
 .news {
   left: 15%;
 }
 
-.note {
+.note-button {
   right: 15%;
+
+}
+
+.footer-button p {
+  margin: 0;
 }
 
 
-@keyframes rainbow-translate{
-    0% {
-        transform: translateY(0%);
-    }
-    100% {
-        transform: translateY(-100%);
-        
-        
-    }
-    
+@keyframes rainbow-translate {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+
+
+  }
+
 }
 
 
@@ -211,6 +212,88 @@ body {
 }
 */
 
+/*****************modale note**********************/
+
+.note {
+  margin: 1em;
+  width: 40em;
+  position: absolute;
+  top: -63rem;
+  left: 45rem;
+  
+}
+.opacity {
+  opacity: 0;
+}
+
+.box-note {
+  width: 80%;
+  background-color: white;
+  height: 60%;
+  border: solid black 5px;
+  border-radius: 10%;
+}
+
+.bulle {
+  background-color: white;
+  border-radius: 50%;
+  border: solid black 3px;
+  width: 2em;
+  height: 2em;
+  margin: .2em;
+
+}
+
+.note-title {
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 0;
+}
+
+.container-bulle {
+
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.bulle:nth-child(2) {
+  align-self: center;
 
 
+}
 
+.bulle:nth-child(3) {
+  align-self: flex-end;
+
+}
+
+.grille-note {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  gap: 1em;
+}
+
+.box-rainbow {
+  width: .5rem;
+  flex-basis: 0.5em;
+  flex-grow: 1;
+  background-image: url('../assets/img/rainbow-note.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+
+}
+.box-rainbow:hover {
+  cursor: pointer;
+}
+
+.grille-note p {
+  text-align: center;
+  font-size: 3em;
+
+
+}
