@@ -35,7 +35,7 @@ body {
 }
 /****************Header************************/
 .container{
-  max-width: 1200px;
+  width: 100%;
   margin: auto;
    position: relative;
   background-color: var(--bleu);
@@ -214,7 +214,7 @@ h3 {
 
 /**************NUAGE***************/
 #contentCloud {
-    z-index: 1;
+    z-index: 0;
 }
 .cards {
     z-index: 2;
@@ -522,19 +522,19 @@ body {
 */
 
 /*****************modale note**********************/
-.zindex {
-  z-index: 10;
-}
+
 .note {
   margin: 1em;
   width: 40em;
   position: absolute;
   top: -67rem;
   left: 98rem;
+  z-index: 5;
   
 }
 .opacity {
   opacity: 0;
+  z-index: -5;
 }
 
 .box-note {
@@ -789,7 +789,7 @@ body {
     justify-content:space-around;
     margin:0 auto;
 }
-.container{
+.rull-block .container{
     width:50px;
     height:70px;
     background-color: white;
