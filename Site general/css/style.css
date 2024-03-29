@@ -8,11 +8,9 @@
     --jaune: RGB(255, 239, 49);
     --violet:RGB(218, 153, 250);
     --orange:RGB(255, 118, 57);
-    
+    --indigo: RGB(74, 90, 212);
+    --rose:RGB(252, 197, 237);
 
-    
-    
-    
 }
 
 
@@ -39,6 +37,7 @@ body {
 .container{
   max-width: 1200px;
   margin: auto;
+   position: relative;
   background-color: var(--bleu);
 }
 header{
@@ -81,9 +80,11 @@ img{
 }
 .connection {
     background-color: var(--orange);
+    font-family: jua;
 }
-.Inscription {
+.inscription {
     background-color: var(--jaune);
+    font-family: jua;
 }
 .navbar {
     display: flex;
@@ -102,18 +103,20 @@ input{
 /****************Main*************************/
 h1{
     font-family: jua;
+    font-size: 4rem;
 }
 .button-nav{
     padding: 1em 2.5em;
     margin-top: 0.5em;
     border-radius: 10em;
+    font-family: jua;
 }
 
 .accueil {
     background-color: var(--violet);
 }
 .atelier {
-    background-color: var(--bleu);
+    background-color: var(--indigo);
 }
 .coloriages {
     background-color: var(--vert);
@@ -159,8 +162,7 @@ h3 {
         margin: 1rem;
 
 }
-.alphabet,
-.puzzle {
+.alphabet {
     background-color: var(--vert);
 }
 
@@ -175,6 +177,18 @@ h3 {
 
 .aventure {
     background-color: var(--rouge);
+}
+
+.puzzle {
+    background-color: var(--indigo);
+}
+
+.mystere {
+    background-color: var(--rose);
+}
+
+.pixelart {
+    background-color: var(--vert);
 }
 
 .bloc-img {
@@ -199,12 +213,19 @@ h3 {
 }
 
 /**************NUAGE***************/
+#contentCloud {
+    z-index: 1;
+}
+.cards {
+    z-index: 2;
+}
+
 #cloud1 {
     z-index: 1;
     position: absolute;
     left:0px;
-    top:1.5em;
-    font-size: 2em;
+    top:3em;
+    font-size: 6em;
     color: #fff;
     animation: moveCloud 60s linear infinite;
     -webkit-animation: moveCloud 60s linear infinite;
@@ -214,10 +235,10 @@ h3 {
     z-index: 2;
     position: absolute;
     left:-20px;
-    top:2em;
-    font-size: 1em;
+    bottom:6em;
+    font-size: 5em;
     font-weight: 900;
-    color: #666;
+    color: #fff;
     animation-delay:7s;
     -webkit-animation-delay:7s;
     -moz-animation-delay: 7s;
@@ -229,9 +250,9 @@ h3 {
     z-index: 1;
     position: absolute;
     left:-50px;
-    bottom:.5em;
-    font-size: 2.5em;
-    color: #a8e4ec; 
+    bottom:2em;
+    font-size: 7em;
+    color: #fff; 
     animation: moveCloud 55s ease-out infinite;
     -webkit-animation: moveCloud 55s ease-out infinite;
     -moz-animation: moveCloud 55s ease-out infinite; 
@@ -241,9 +262,9 @@ h3 {
     position: absolute;
     left:-10px;
     top:3em;
-    font-size: 2em;
+    font-size: 4em;
     font-weight: 900;
-    color: #999;
+    color: #fff;
     animation-delay:1s;
     -webkit-animation-delay:1s;
     -moz-animation-delay: 1s;
@@ -256,10 +277,9 @@ h3 {
     position: absolute;
     left:-60px;
     top:2.8em;
-    font-size: 2.5em;
+    font-size: 4em;
     font-weight: 900;
-    color: #bababa;
-    color: #bababa;
+    color: #fff;
     animation: moveCloud 70s ease-out infinite;
     -webkit-animation: moveCloud 70s ease-out infinite;
     -moz-animation: moveCloud 70s ease-out infinite;
@@ -269,9 +289,9 @@ h3 {
     position: absolute;
     left:-40px;
     top:0.5em;
-    font-size: 1.8em;
+    font-size: 6em;
     font-weight: 900;
-    color: #cacaca;
+    color: #fff;
     animation-delay:4s;
     -webkit-animation-delay:4s;
     -moz-animation-delay: 4s;
