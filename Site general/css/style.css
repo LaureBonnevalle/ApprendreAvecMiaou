@@ -338,6 +338,182 @@ h3 {
     }
 }
 
+/**********************pixelart***********************/
+.body-pixelart {
+   background-color: purple;
+}
+.section-pixelart {
+    background-color: purple;
+}
+
+.rull-block{
+    display:flex;
+    align-items:center;
+    width: 290px;
+    justify-content:space-around;
+    margin:0 auto;
+}
+.container{
+    width:50px;
+    height:70px;
+    background-color: white;
+   
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    align-items:center;
+    position:relative;
+   
+}
+.container-size{
+    justify-content:space-between;
+   
+    
+   
+}
+
+.container .container-div {
+    border-radius: 19px;
+}
+#size{
+    font-size:30px;
+    height:50px;
+    background-color:white;
+    border-radius: 19px;
+    z-index:2000;
+}
+#clr{
+    display:none;
+}
+label{
+    width:20px;
+    height:20px;
+    border:solid #333 2px;
+    display:inline-flex;
+    border-radius:50%;
+    justify-content:center;
+    align-items:center;
+   
+}
+label:before{
+    content:"\1F3A8";
+    position:absolute;
+    top:0px;
+    font-size:30px;
+}
+label::after{
+    content:"";
+   
+   
+    width:20px;
+    height:15px;
+    border:solid white 2px;
+    border-radius: 19px;
+    display:inline-block;
+    border-radius:19px;
+   
+}
+span{
+    font-size:20px;
+    border-radius: 19px;
+}
+button{
+    border:none;
+    background-color:white;
+    border-radius : 19px;
+}
+
+.pinceau {
+    height: 20px;
+    width: 20px;
+}
+.wrap{
+    margin:50px auto;
+    display:flex;
+    flex-wrap:wrap;
+    width:900px;
+    line-height:0;
+    
+   
+}
+.cell{
+    outline:solid black 1px;
+    width:90px;
+    height:90px;
+    display:table-cell;
+    background-color:white;
+    font-size:30px;
+    font-family:'Comic Neue';
+    font-weight:bold;
+    text-align:center;
+    color:green;
+    line-height:30px;
+}
+
+.cell10{
+    width:60px;
+    height:20px;
+}
+/*---*/
+
+.select{
+    width:50px;
+    margin:0 auto;
+    position:relative;
+    border-radius: 19px;
+    background:#fff;
+    z-index:100;
+    text-align:center;
+}
+.select.is-active .select__body{
+    top:100%;
+    transform:scale(1, 1) translateY(0px);
+    transition:top 0.5s;
+}
+.select__header{
+   
+   
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.select__current{
+    font-size:14px;
+    line-height:22px;
+   
+    background:#fff;
+    text-align:center;
+}
+
+.select__body{
+    border:solid black 1px;
+    border-too:0;
+    background-color:rgba(255,255,255,0.5);
+    left:0;
+    right:0;
+    top:-48px;
+    position:absolute;
+    transform:scale(0, 0) translateY(-50px);
+    transition:transform 0.5s;
+   
+    z-index:-1;
+}
+.select__item{
+    cursor:pointer;
+    font-size:14px;
+    line-height:24px;
+    padding:5px;
+   text-align:center;
+}
+.select__item:hover{
+    background-color:#f2f2f2;
+}
+
+.box10{
+    width:29px;
+    height:29px;
+}
 
 
 
