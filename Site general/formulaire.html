@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="Formulaire de Contact Apprendre avec Miaou" />
+    <title>Formulaire de contact</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+</head>
+
+<body class="body-form">
+    <header class="header-form">
+        <header class="header">
+            <div class="div-header">
+
+                <div class="chat">
+                    <img src="./img/logo-modifier.png" alt="logo chat">
+                </div>
+
+                <div>
+                    <h1>Apprendre avec Miaou</h1>
+                </div>
+
+                <div>
+                    <ul>
+                        <li class="connection"><a href="#">Connection</a></li>
+                        <li class="Inscription"><a href="form-inscription.html">Inscription</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="search">
+                <form>
+                    <input type="search" placeholder="recherche...">
+                </form>
+            </div>
+        </header>
+
+    </header>
+    <main class="container-form">
+        <div class="navbar">
+            <a href="index.html" class="button-nav accueil">Accueil</a>
+            <a href="#" class="button-nav atelier">Ateliers</a>
+            <a href="#" class="button-nav coloriages">coloriages</a>
+            <a href="formulaire.html" class="button-nav contact">Contactez-nous</a>
+        </div>
+        <h2>Contactez-nous</h2>
+        <form method="post">
+            <fieldset>
+                <legend>Tes coordonnées</legend>
+                <div class="field-form">
+                    <label for="firstNameFieldId">Ton Prénom</label>
+                    <input type="text" name="firstName" id="firstNameFieldId" />
+                </div>
+                <div class="field-form">
+                    <label for="lastNameFieldId">Ton Nom</label>
+                    <input type="text" name="lastName" id="lastNameFieldId" />
+                </div>
+                <div class="field-form">
+                    <label for="emailFieldId">Ton Email</label>
+                    <input type="email" name="email" id="emailFieldId" />
+                </div>
+                <div class="field-form">
+                    <label for="dateOfBirthFieldId">Ta Date de Naissance</label>
+                    <input type="date" name="dateOfBirth" id="dateOfBirthFieldId" />
+                </div>
+                <!-- <div class="field">
+                    <label for="isTallFieldId">Est grand</label>
+                    <input type="checkbox" name="isTall" id="isTallFieldId" />
+                </div>-->
+            </fieldset>
+            <fieldset>
+                <legend>Ta demande</legend>
+                <div class="field-form">
+                    <select name="object">
+                        <option value="0">Choisir l'objet de ma demande...</option>
+                        <option value="u">Question par rapport aux jeux</option>
+                        <option value="f">Question par rapport au site</option>
+                        <option value="q">Question générale</option>
+                        <option value="g">Déclarer un bug génant</option>
+                        <option value="b">Déclarer un bug bloquant</option>
+                        <option value="k">Autre demande</option>
+                    </select>
+                </div>
+                <div class="field-form">
+                    <textarea></textarea>
+                </div>
+            </fieldset>
+            <div class="toolbar-form">
+                <button class="submit-button-form">Valider le formulaire</button>
+            </div>
+        </form>
+    </main>
+    <div class="rainbow-menu">
+            <button class="footer-button news">Abonne toi !</button>
+            <button class="footer-button note-button">Note le site !</button>
+            <div class="color">
+                <div class="bande"></div>
+                <div class="bande"></div>
+                <div class="bande"></div>
+                <div class="bande"></div>
+                <div class="bande"></div>
+                <div class="bande"></div>
+            </div>
+
+        </div>
+    <footer class="frog">
+        
+        <div class="mouth"></div>
+        <div class="paupiere gauche">
+            <div class="yeux">
+                <div class="pupille"></div>
+            </div>
+        </div>
+        <div class="paupiere droite">
+            <div class="yeux">
+                <div class="pupille"></div>
+            </div>
+        </div>
+
+
+
+    </footer>
+</body>
+
+</html>
