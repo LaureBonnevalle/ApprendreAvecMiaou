@@ -1,7 +1,7 @@
 
 window.onload = ()=> {
 const cards = document.querySelectorAll('.card-memo');
-const base = "../img/";
+const base = "./img/";
 const faces = [
   `${base}chat.png`,
   `${base}etoile.png`,
