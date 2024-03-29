@@ -373,10 +373,12 @@ body {
   position: absolute;
   top: -67rem;
   left: 98rem;
+  z-index: 10;
   
 }
 .opacity {
-  opacity: 0;
+  display: none;
+  z-index: -5;
 }
 
 .box-note {
