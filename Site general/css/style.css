@@ -336,27 +336,12 @@ h3 {
 
 @media screen and (min-width: 1200px) {
     .cards {
-        grid-template-columns: repeat(3, 1fr);
-        justify-items: center;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-    .cards {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
-        width: 50%;
-        
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .cards {
         grid-template-columns: repeat(3, 1fr);
         justify-items: center;
     }
 }
+
 
 
 
