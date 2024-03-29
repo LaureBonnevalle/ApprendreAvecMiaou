@@ -2,9 +2,17 @@
 
 
 
+<<<<<<< HEAD
+.body-pixelart {
+=======
 body {
+>>>>>>> 419a334d9ead18f2d8942a3218654ec100d088ac
    background-color: purple;
 }
+.section-pixelart {
+    background-color: purple;
+}
+
 .rull-block{
     display:flex;
     align-items:center;
