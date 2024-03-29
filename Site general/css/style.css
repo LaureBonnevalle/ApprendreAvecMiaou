@@ -349,150 +349,255 @@ h3 {
 /***********footer***************/
 
 body {
-    min-height: 100em;
-  }
-  
-  .frog {
-    width: 100%;
-    position: relative;
-    bottom: -300px;
-    min-height: 10em;
-    background-color: var(--vert);
-    
-  
-    
-  }
-  
-  .paupiere {
-    width: 10em;
-    height: 10em;
-    border-radius: 50%;
-    position: absolute;
-    background-color: var(--vert);
-  }
-  .droite {
-    top: -5em;
-    right: 10em;
-  }
-  
-  .gauche {
-    top: -5em;
-    left: 10em;
-  }
-  
-  .yeux {
-    background-color: white;
-    width: 8em;
-    height: 8em;
-    position:absolute;
-    border-radius: 50%;
-    top: 15px;
-    left: 15px;
-  }
-  
-  .pupille {
-    width: 5em;
-    height: 5em;
-    border-radius: 50%;
-    position: absolute;
-    top: 23px;
-    left: 23px;
-    background-color: black;
-  }
-  
-  .mouth {
-    position: absolute;
-    top: 50%;
-    left: 45%;
-    width: 100px;
-      height: 50px; /* as the half of the width */
-      
-      border-bottom-left-radius: 110px;  /* 100px of height + 10px of border */
-      border-bottom-right-radius: 110px; /* 100px of height + 10px of border */
-      border: 5px solid black;
-      border-top: 0;
-    
-  }
-  .rainbow-menu {
-    position: absolute;
-    top: -200%;
-    left: 0;
-    width: 100%;
-    height: 20em;
-    z-index: -1;
-    list-style: none;
-    
-  }
-  .bande {
-    
-  }
-  .color {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .bande {
-    flex-basis: 1em;
-    flex-grow: 1;
-  }
-  
-  .bande:nth-child(1){
-    background-color: var(--rouge);
-  }
-  .bande:nth-child(2){
-    background-color: var(--orange);
-  }
-  .bande:nth-child(3){
-    background-color: var(--jaune);
-  }
-  .bande:nth-child(4){
-    background-color: var(--vert);
-  }
-  .bande:nth-child(5){
-    background-color: var(--bleu);
-  }
-  .bande:nth-child(6){
-    background-color: var(--violet);
-  }
+  min-height: 100em;
+}
+
+.frog {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  min-height: 10em;
+  background-color: var(--vert);
+
+
+
+}
+
+.paupiere {
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  position: absolute;
+  background-color: var(--vert);
+}
+
+.droite {
+  top: -5em;
+  right: 10em;
+}
+
+.gauche {
+  top: -5em;
+  left: 10em;
+}
+
+.yeux {
+  background-color: white;
+  width: 8em;
+  height: 8em;
+  position: absolute;
+  border-radius: 50%;
+  top: 15px;
+  left: 15px;
+}
+
+.pupille {
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  position: absolute;
+  top: 23px;
+  left: 23px;
+  background-color: black;
+}
+
+.mouth {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  width: 100px;
+  height: 50px;
+  /* as the half of the width */
+  border-bottom-left-radius: 110px;
+  /* 100px of height + 10px of border */
+  border-bottom-right-radius: 110px;
+  /* 100px of height + 10px of border */
+  border: 5px solid black;
+  border-top: 0;
+
+}
+
+.rainbow-menu {
   
   
-  .footer-button {
-    background-color: white;
-    position: absolute;
-    top: 40%;
-    padding: 1em 2em 1em 2em;
-    font-size: 25px;
-    border-radius: 15px;
-    border: none;
+  width: 100%;
+  height: 20em;
+  z-index: 0;
+  position: relative;
+  top: -7.9rem;
+  
+}
+
+
+
+.color {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.bande {
+  flex-basis: 1em;
+  flex-grow: 1;
+}
+
+.bande:nth-child(1) {
+  background-color: var(--rouge);
+}
+
+.bande:nth-child(2) {
+  background-color: var(--orange);
+}
+
+.bande:nth-child(3) {
+  background-color: var(--jaune);
+}
+
+.bande:nth-child(4) {
+  background-color: var(--vert);
+}
+
+.bande:nth-child(5) {
+  background-color: var(--bleu);
+}
+
+.bande:nth-child(6) {
+  background-color: var(--violet);
+}
+
+
+.footer-button {
+  background-color: white;
+  position: relative;
+  top: 40%;
+  padding: 1em 2em 1em 2em;
+  font-size: 25px;
+  border-radius: 15px;
+  border: none;
+  z-index: 3;
+  font-family: "jua";
+}
+
+.footer-button:hover {
+  cursor: pointer;
+}
+
+.news {
+  left: 15%;
+}
+
+.note-button {
+  right: -57%;
+
+}
+
+.footer-button p {
+  margin: 0;
+}
+
+
+@keyframes rainbow-translate {
+  0% {
+    transform: translateY(0%);
   }
-  
-  .news {
-    left: 15%;
+  100% {
+    transform: translateY(-100%);
+
+
   }
+
+}
+
+
+
+/*
+.rainbow-menu:hover {
+  animation-play-state: paused;
+}
+*/
+
+/*****************modale note**********************/
+
+.note {
+  margin: 1em;
+  width: 40em;
+  position: absolute;
+  top: -67rem;
+  left: 98rem;
   
-  .note {
-    right: 15%;
-  }
-  
-  
-  @keyframes rainbow-translate{
-      0% {
-          transform: translateY(0%);
-      }
-      100% {
-          transform: translateY(-100%);
-          
-          
-      }
-      
-  }
-  
-  
-  
-  /*
-  .rainbow-menu:hover {
-    animation-play-state: paused;
-  }
-  */
-  
+}
+.opacity {
+  opacity: 0;
+}
+
+.box-note {
+  width: 80%;
+  background-color: white;
+  height: 60%;
+  border: solid black 5px;
+  border-radius: 10%;
+}
+
+.bulle {
+  background-color: white;
+  border-radius: 50%;
+  border: solid black 3px;
+  width: 2em;
+  height: 2em;
+  margin: .2em;
+
+}
+
+.note-title {
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 0;
+}
+
+.container-bulle {
+
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.bulle:nth-child(2) {
+  align-self: center;
+
+
+}
+
+.bulle:nth-child(3) {
+  align-self: flex-end;
+
+}
+
+.grille-note {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  gap: 1em;
+}
+
+.box-rainbow {
+  width: .5rem;
+  flex-basis: 0.5em;
+  flex-grow: 1;
+  background-image: url('../img/rainbow-note.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+
+}
+.box-rainbow:hover {
+  cursor: pointer;
+}
+
+.grille-note p {
+  text-align: center;
+  font-size: 3em;
+
+
+}
